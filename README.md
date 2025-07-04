@@ -13,6 +13,7 @@ Or use:
 pip3 install flask
 
 ```
+If you want a good zip, download it. It is in the top.
 
 And there you go.
 # ENJOY!
