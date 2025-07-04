@@ -1,6 +1,6 @@
 # Fruits-Checker
 Select fruits that you like!
-Go to .py file and then the .html file. Copy them in your program and enjoy!
+Go to .py file and then the .html file. Copy them in your program and also drag the static folder to your project(app).
 But first install Flask
 ```bash
 pip install flask
