@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Фрукти</title>
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #3c7ee8;
+        padding: 20px;
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 36px;
+}
+
+    form {
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #e9ebf0;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    p {
+        font-size: 18px;
+        color: #555;
+    }
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
+</style>
+  <h1>Фрукти</h1>
+
+  <form action="/" method="get">
+    <button type="submit">Всі</button>
+  </form>
+  <form action="/red" method="get">
+    <button type="submit" style="background-color: red; color: white;">Червоні</button>
+  </form>
+  <form action="/green" method="get">
+    <button type="submit" style="background-color: green; color: white;">Зелені</button>
+  </form>
+  <form action="/yellowfruitsandorangefruits" method="get">
+    <button type="submit" style="background-color: yellow; color: cyan;">Жовті</button>
+  </form>
+
+  <!-- Вивід фруктів -->
+  {% for fruit in fruits %}
+    <p>{{ fruit.name }}</p>
+    <img src="{{ fruit.image }}">
+  {% endfor %}
+
+</body>
+</html>
